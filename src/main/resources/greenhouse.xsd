@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns = "http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.org/greenhouse"
+        xmlns:tns = "http://www.example.org/greenhouse"
+        elementFormDefault= "qualified">
+
+    <element name="greenhouse">
+        <complexType>
+            <sequence>
+                <element ref="tns:plant" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="plantType">
+        <sequence>
+            <element name="name" type="string"/>
+            <element name="plant-time" type="gYearMonth"/>
+            <element name="origin" type="tns:origin"/>
+            <element name="soil" type="tns:soil"/>
+            <element name="growing-tips" type="tns:growingTips"/>
+        </sequence>
+        <attribute name="id" type="tns:plantID" use="required"/>
+        <attribute name="manufacturer-name" default="greenhouse"/>
+    </complexType>
+
+    <complexType name="flowerType">
+        <complexContent>
+            <extension base="tns:plantType">
+                <sequence>
+                    <element name="sort" type="tns:flowerSort"/>
+                    <element name="color" type="string"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="treeType">
+        <complexContent>
+            <extension base="tns:plantType">
+                <sequence>
+                    <element name="sort" type="tns:treeSort"/>
+                    <element name="height" type="tns:treeHeight"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="growingTips">
+        <sequence>
+            <element name="light" type="boolean"/>
+            <element name="temperature" type="tns:temperature"/>
+        </sequence>
+    </complexType>
+
+    <simpleType name="plantID">
+        <restriction base="ID">
+            <pattern value="id\d{4}" />
+        </restriction>
+    </simpleType>
+
+    <simpleType name="origin">
+        <restriction base="string">
+            <enumeration value="Russian"/>
+            <enumeration value="Netherlands"/>
+            <enumeration value="Germany"/>
+            <enumeration value="Spain"/>
+            <enumeration value="Ukraine"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="soil">
+        <restriction base="string">
+            <enumeration value="Loam"/>
+            <enumeration value="Silt"/>
+            <enumeration value="Peat"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="temperature">
+        <restriction base="int">
+            <minInclusive value="12"/>
+            <maxInclusive value="30"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="flowerSort">
+        <restriction base="string">
+            <enumeration value="Succulent"/>
+            <enumeration value="Bulb"/>
+            <enumeration value="Shrub"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="treeSort">
+        <restriction base="string">
+            <enumeration value="Deciduous"/>
+            <enumeration value="Evergreen"/>
+            <enumeration value="Fruit"/>
+            <enumeration value="Conifers"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="treeHeight">
+        <restriction base="double">
+            <minInclusive value="1.0"/>
+            <maxInclusive value="45.0"/>
+        </restriction>
+    </simpleType>
+
+    <element name="plant" type="tns:plantType" abstract="true"/>
+    <element name="flower" type="tns:flowerType" substitutionGroup="tns:plant"/>
+    <element name="tree" type="tns:treeType" substitutionGroup="tns:plant"/>
+
+
+</schema>

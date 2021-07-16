@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<greenhouse xmlns="http://www.example.org/greenhouse"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://www.example.org/greenhouse greenhouse.xsd">
+
+    <tree id="id1001">
+        <name>Spherical willow</name>
+        <plant-time>2015-10</plant-time>
+        <origin>Ukraine</origin>
+        <soil>Peat</soil>
+        <growing-tips>
+            <light>true</light>
+            <temperature>25</temperature>
+        </growing-tips>
+        <sort>Deciduous</sort>
+        <height>14.0</height>
+    </tree>
+    
+    <tree id="id1002">
+        <name>Thorny spruce</name>
+        <plant-time>2016-04</plant-time>
+        <origin>Germany</origin>
+        <soil>Peat</soil>
+        <growing-tips>
+            <light>true</light>
+            <temperature>23</temperature>
+        </growing-tips>
+        <sort>Conifers</sort>
+        <height>15.0</height>
+    </tree>
+    
+    <tree id="id1003">
+        <name>Cypress</name>
+        <plant-time>2014-10</plant-time>
+        <origin>Ukraine</origin>
+        <soil>Silt</soil>
+        <growing-tips>
+            <light>true</light>
+            <temperature>28</temperature>
+        </growing-tips>
+        <sort>Evergreen</sort>
+        <height>1.5</height>
+    </tree>
+    
+    <tree id="id1004">
+        <name>Juniper</name>
+        <plant-time>2019-05</plant-time>
+        <origin>Ukraine</origin>
+        <soil>Silt</soil>
+        <growing-tips>
+            <light>true</light>
+            <temperature>28</temperature>
+        </growing-tips>
+        <sort>Evergreen</sort>
+        <height>1.5</height>
+    </tree>
+    
+    <tree id="id1005">
+        <name>Viburnum</name>
+        <plant-time>2020-04</plant-time>
+        <origin>Russian</origin>
+        <soil>Peat</soil>
+        <growing-tips>
+            <light>false</light>
+            <temperature>24</temperature>
+        </growing-tips>
+        <sort>Fruit</sort>
+        <height>4.0</height>
+    </tree>
+    
+    <tree id="id1006">
+        <name>Gravenstein</name>
+        <plant-time>2018-05</plant-time>
+        <origin>Netherlands</origin>
+        <soil>Peat</soil>
+        <growing-tips>
+            <light>true</light>
+            <temperature>24</temperature>
+        </growing-tips>
+        <sort>Fruit</sort>
+        <height>5.0</height>
+    </tree>
+
+    <tree id="id1007">
+        <name>Maple</name>
+        <plant-time>2017-10</plant-time>
+        <origin>Germany</origin>
+        <soil>Loam</soil>
+        <growing-tips>
+            <light>true</light>
+            <temperature>26</temperature>
+        </growing-tips>
+        <sort>Deciduous</sort>
+        <height>35.0</height>
+    </tree>
+
+    <tree id="id1008">
+        <name>Plum</name>
+        <plant-time>2019-03</plant-time>
+        <origin>Spain</origin>
+        <soil>Loam</soil>
+        <growing-tips>
+            <light>true</light>
+            <temperature>26</temperature>
+        </growing-tips>
+        <sort>Fruit</sort>
+        <height>2.0</height>
+    </tree>
+
+    <flower id="id2001">
+        <name>Rose</name>
+        <plant-time>2021-04</plant-time>
+        <origin>Russian</origin>
+        <soil>Loam</soil>
+        <growing-tips>
+            <light>true</light>
+            <temperature>24</temperature>
+        </growing-tips>
+        <sort>Shrub</sort>
+        <color>Red</color>
+    </flower>
+
+    <flower id="id2002">
+        <name>Chrysanthemum</name>
+        <plant-time>2021-04</plant-time>
+        <origin>Netherlands</origin>
+        <soil>Peat</soil>
+        <growing-tips>
+            <light>true</light>
+            <temperature>24</temperature>
+        </growing-tips>
+        <sort>Shrub</sort>
+        <color>Pink</color>
+    </flower>
+
+    <flower id="id2003">
+        <name>Scintillation</name>
+        <plant-time>2021-03</plant-time>
+        <origin>Spain</origin>
+        <soil>Peat</soil>
+        <growing-tips>
+            <light>true</light>
+            <temperature>26</temperature>
+        </growing-tips>
+        <sort>Bulb</sort>
+        <color>Pink</color>
+    </flower>
+
+    <flower id="id2004">
+        <name>Aquilegia</name>
+        <plant-time>2021-05</plant-time>
+        <origin>Netherlands</origin>
+        <soil>Loam</soil>
+        <growing-tips>
+            <light>false</light>
+            <temperature>24</temperature>
+        </growing-tips>
+        <sort>Shrub</sort>
+        <color>Yellow</color>
+    </flower>
+
+    <flower id="id2005">
+        <name>Dicenter</name>
+        <plant-time>2020-10</plant-time>
+        <origin>Ukraine</origin>
+        <soil>Peat</soil>
+        <growing-tips>
+            <light>false</light>
+            <temperature>24</temperature>
+        </growing-tips>
+        <sort>Bulb</sort>
+        <color>White</color>
+    </flower>
+
+    <flower id="id2006">
+        <name>Lobelia</name>
+        <plant-time>2020-09</plant-time>
+        <origin>Russian</origin>
+        <soil>Peat</soil>
+        <growing-tips>
+            <light>true</light>
+            <temperature>24</temperature>
+        </growing-tips>
+        <sort>Shrub</sort>
+        <color>Blue</color>
+    </flower>
+
+    <flower id="id2007">
+        <name>Haworthia</name>
+        <plant-time>2020-04</plant-time>
+        <origin>Netherlands</origin>
+        <soil>Silt</soil>
+        <growing-tips>
+            <light>true</light>
+            <temperature>23</temperature>
+        </growing-tips>
+        <sort>Succulent</sort>
+        <color>Green</color>
+    </flower>
+
+    <flower id="id2008">
+        <name>Aeonium</name>
+        <plant-time>2020-05</plant-time>
+        <origin>Netherlands</origin>
+        <soil>Silt</soil>
+        <growing-tips>
+            <light>true</light>
+            <temperature>25</temperature>
+        </growing-tips>
+        <sort>Succulent</sort>
+        <color>Purple</color>
+    </flower>
+</greenhouse>
